@@ -1,0 +1,9 @@
+<form [formGroup]="postForm" (ngSubmit)="submitData()">
+  <label for="name">Name</label>
+  <input type="text" id="name" formControlName="name" class="u-full-width">
+  <label for="content">Mew</label>
+  <textarea id="content" formControlName="content" class="u-full-width"></textarea>
+  <button class="button-primary">Send Your Mew 😺</button>
+</form>
+
+<router-outlet></router-outlet>
